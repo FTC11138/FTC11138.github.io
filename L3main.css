@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+header {
+    background: #999;
+    color: white;
+    padding: 15px 15px 0 15px;
+}
+
+header h1 {
+    margin: 0;
+    display: inline;
+}
+
+nav /* nav=navigation/hyperlinks */ul{
+    margin: 0;
+    display: inline;
+}
+
+nav ul li {
+    background: none;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.col {
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0.5%;
+    float: left;
+    margin: 0.5%;
+    width: 31%;
+}
+
+/* footer {
+    clear: both
+} */
