@@ -12,6 +12,10 @@ body {
     /* background-color: rgba(red, green, blue, 0.5) */
 /* } */
 
+a {
+    color: #ff8799
+}
+
 header {
     background: none;
     color: white;
