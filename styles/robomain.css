@@ -91,6 +91,7 @@ nav ul li a {
 }
 
 .navBarButton {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: none;
   color: white;
   font-size: 15pt;
