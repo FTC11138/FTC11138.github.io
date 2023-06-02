@@ -126,31 +126,3 @@ nav ul li a {
 :root {
   font-size: 125%;
 }
-
-.accordion-item {
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-.accordion-header {
-  background-color: #f2f2f2;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.accordion-content {
-  display: none;
-  padding: 10px;
-}
-
-.arrow {
-  float: right;
-}
-
-.accordion-header.active .arrow {
-  transform: rotate(180deg);
-}
-
-/* footer {
-    clear: both
-} */
