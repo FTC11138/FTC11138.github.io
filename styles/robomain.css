@@ -60,6 +60,10 @@ p {
   font-size: 150%;
 }
 
+a {
+  color: white;
+}
+
 ul {
   /* list-style-type: none; */
   margin: 10px 15%;
