@@ -176,7 +176,7 @@ button.nav-link:hover {
   background-color: white;
 }
 
-@media(max-width:786px) {
+@media(max-width:1000px) {
 
   .hamburger-menu {
     display: block;
