@@ -1,3 +1,7 @@
+ul.page-selection-list a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 5px 25px;
@@ -109,10 +113,6 @@ nav ul li a {
 
 :root {
     font-size: 125%;
-}
-
-ul.page-selection-list a:hover {
-    text-decoration: underline;
 }
 
 /* footer {
