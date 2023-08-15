@@ -159,6 +159,8 @@ li {
 
 button.nav-link:hover {
   color: darkgray;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .hamburger-menu {
