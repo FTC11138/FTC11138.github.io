@@ -111,6 +111,10 @@ nav ul li a {
     font-size: 125%;
 }
 
+ul.page-selection-list a:hover {
+    text-decoration: underline;
+}
+
 /* footer {
     clear: both
 } */
