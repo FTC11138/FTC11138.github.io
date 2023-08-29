@@ -218,5 +218,40 @@ button.nav-link:hover {
   }
 }
 
+/* Reset some default margins/padding for better control */
+body, div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.profile-container {
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-box {
+  width: calc(33.33% - 300px);
+  margin: 20px;
+  /* margin-left: 15%; */
+  background-color: maroon;
+  border: 1px solid gray;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .profile-box {
+      width: calc(50% - 20px); /* Two profiles per row for smaller screens */
+  }
+}
+
 
 
