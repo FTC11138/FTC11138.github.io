@@ -4,6 +4,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
   margin: 5px 25px;
   background: black;
+  color: white;
   margin-top: 200px;
 }
 
@@ -236,11 +237,11 @@ body, div {
 }
 
 .profile-box {
-  width: calc(33.33% - 300px);
+  width: calc(33.33% - 200px);
   margin: 20px;
   /* margin-left: 15%; */
   background-color: maroon;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   padding: 20px;
   color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
