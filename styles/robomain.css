@@ -217,7 +217,7 @@ div {
   align-items: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .profile-box {
     /* width: calc(50% - 20px); */
     width: 100%;
