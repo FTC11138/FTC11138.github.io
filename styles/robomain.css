@@ -1,4 +1,3 @@
-
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -179,9 +178,9 @@ button.nav-link:hover {
 
   .hamburger-menu {
     display: block;
-    
+
   }
-  
+
   .navbar {
     width: 95%;
   }
@@ -189,9 +188,11 @@ button.nav-link:hover {
   .hamburger-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
@@ -220,7 +221,8 @@ button.nav-link:hover {
 }
 
 /* Reset some default margins/padding for better control */
-body, div {
+body,
+div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -250,9 +252,7 @@ body, div {
 
 @media screen and (max-width: 1500px) {
   .profile-box {
-      width: calc(50% - 20px); /* Two profiles per row for smaller screens */
+    width: calc(50% - 20px);
+    /* Two profiles per row for smaller screens */
   }
 }
-
-
-
