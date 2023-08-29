@@ -209,7 +209,7 @@ div {
 
 .profile-box {
   width: calc(33.33% - 200px);
-  margin: 10px;
+  margin: 20px;
   background-color: maroon;
   padding: 20px;
   color: white;
