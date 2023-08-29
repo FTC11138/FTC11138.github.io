@@ -239,8 +239,8 @@ div {
 }
 
 .profile-box {
-  width: calc(33.33% - 200px);
-  margin: 20px;
+  width: calc(33.33% - 150px);
+  margin: 10px;
   /* margin-left: 15%; */
   background-color: maroon;
   /* border: 1px solid gray; */
