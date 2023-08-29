@@ -208,7 +208,7 @@ div {
 }
 
 .profile-box {
-  width: calc(33.33% - 150px);
+  width: calc(33.33% - 200px);
   margin: 10px;
   background-color: maroon;
   padding: 20px;
@@ -217,9 +217,10 @@ div {
   align-items: center;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .profile-box {
-    width: calc(50% - 20px);
+    /* width: calc(50% - 20px); */
+    width: 100%;
   }
 }
 
