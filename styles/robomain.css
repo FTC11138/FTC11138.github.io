@@ -256,3 +256,21 @@ div {
     /* Two profiles per row for smaller screens */
   }
 }
+
+.program-introduction-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.program-introduction-box {
+  width: calc(33.33% - 50px);
+  margin: 20px;
+  background-color: maroon;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0,1);
+  align-items: center;
+}
