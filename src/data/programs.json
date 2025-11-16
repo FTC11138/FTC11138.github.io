@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ftc-centerstage",
+    "title": "CENTERSTAGE — HALO 2.0",
+    "blurb": "Our 2023-24 robot features a carbon fiber dual-stage lift, drone launcher, and custom Road Runner autonomous.",
+    "rounds": [
+      "Pixel intake + delivery with guided sliders",
+      "Dual camera AprilTag localization",
+      "Drone launcher tuned for endgame",
+      "Custom dashboards for live telemetry"
+    ],
+    "schedule": [{ "day": "Season", "time": "September – April", "tz": "PT" }],
+    "gradeMin": 9,
+    "gradeMax": 12,
+    "price": 0
+  }
+]
