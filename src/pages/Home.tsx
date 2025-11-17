@@ -77,7 +77,7 @@ export default function Home() {
                 {missionPillars.map((item) => (
                   <div
                     key={item.title}
-                    className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur shadow-lg shadow-black/40"
+                    className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left backdrop-blur shadow-lg shadow-black/40 transition-transform duration-200 hover:-translate-y-1"
                   >
                     <item.icon className="h-8 w-8 text-red-400" />
                     <h3 className="mt-4 text-2xl font-semibold">
@@ -94,7 +94,7 @@ export default function Home() {
 
       <section className="container-std pb-16 text-center">
         <FloatIn delay={700}>
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-red-600/20 via-black to-black p-8 md:p-12 shadow-2xl shadow-black/50">
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-red-600/20 via-black to-black p-8 md:p-12 shadow-2xl shadow-black/50 transition-transform duration-200 hover:-translate-y-1">
             <div className="flex flex-col gap-6 items-center">
               <div>
                 <p className="text-xs uppercase tracking-[0.4em] text-red-300">

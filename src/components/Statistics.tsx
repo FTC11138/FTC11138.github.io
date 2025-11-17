@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import { statsData } from '../data/statsData';
+import { useEffect, useRef, useState } from "react";
+import { statsData } from "../data/statsData";
 
 const DURATION = 1300; // 1 second per counter
 
@@ -8,8 +8,8 @@ const Counter = ({
   start = 0,
   end,
   duration = DURATION,
-  suffix = '',
-  prefix = '',
+  suffix = "",
+  prefix = "",
   decimals = 0,
   onComplete,
 }: {
@@ -94,32 +94,39 @@ export const Statistics = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+    <div
+      ref={containerRef}
+      className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"
+    >
       {statsData.map((stat, index) => {
         const isActive = index === activeIndex;
         const isDone = index < activeIndex;
         const decimals = stat.decimals ?? 0;
         const displayValue = isDone ? (
           <span className="text-4xl font-bold text-red-400">
-            {stat.prefix ?? ''}
-            {decimals > 0 ? Number(stat.maxNumber).toFixed(decimals) : stat.maxNumber}
-            {stat.suffix ?? ''}
+            {stat.prefix ?? ""}
+            {decimals > 0
+              ? Number(stat.maxNumber).toFixed(decimals)
+              : stat.maxNumber}
+            {stat.suffix ?? ""}
           </span>
         ) : isActive ? (
           <Counter
             start={0}
             end={stat.maxNumber}
             duration={DURATION}
-            prefix={stat.prefix ?? ''}
-            suffix={stat.suffix ?? ''}
+            prefix={stat.prefix ?? ""}
+            suffix={stat.suffix ?? ""}
             decimals={decimals}
-            onComplete={() => setActiveIndex((i) => Math.min(i + 1, statsData.length))}
+            onComplete={() =>
+              setActiveIndex((i) => Math.min(i + 1, statsData.length))
+            }
           />
         ) : (
           <span className="text-4xl font-bold text-red-400">
-            {stat.prefix ?? ''}
-            {decimals > 0 ? (0).toFixed(decimals) : '0'}
-            {stat.suffix ?? ''}
+            {stat.prefix ?? ""}
+            {decimals > 0 ? (0).toFixed(decimals) : "0"}
+            {stat.suffix ?? ""}
           </span>
         );
 
@@ -132,7 +139,9 @@ export const Statistics = () => {
               <div className="h-16 flex items-center justify-center">
                 {displayValue}
               </div>
-              <h3 className="mt-2 text-md font-medium text-white">{stat.title}</h3>
+              <h3 className="mt-2 text-md font-medium text-white">
+                {stat.title}
+              </h3>
               {stat.description ? (
                 <p className="mt-1 text-sm text-gray-300">{stat.description}</p>
               ) : null}
