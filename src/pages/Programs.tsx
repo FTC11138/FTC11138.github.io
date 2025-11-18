@@ -131,7 +131,7 @@ export default function Programs() {
 
         <div className="space-y-10">
           {seasonTimeline.map((phase, index) => (
-            <FloatIn key={phase.title} delay={150 + index * 100}>
+            <FloatIn key={phase.title} delay={200 + index * 100}>
               <article className="relative flex gap-6 md:gap-10">
                 {/* Timeline marker */}
                 <div className="flex flex-col items-center shrink-0">

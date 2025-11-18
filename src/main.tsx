@@ -13,6 +13,7 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
 import PastSeasons from "./pages/PastSeasons";
+import Outreach from "./pages/Outreach";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
@@ -25,8 +26,10 @@ const router = createBrowserRouter([
       { path: "competitions/:id", element: <ProgramDetail /> },
       { path: "team", element: <Team /> },
       { path: "robots", element: <Robots /> },
+      { path: "outreach", element: <Outreach /> },
       { path: "donate", element: <Donate /> },
       { path: "contact", element: <Contact /> },
+      { path: "join", element: <Contact /> },
       { path: "past-seasons", element: <PastSeasons /> },
       { path: "resources", element: <Resources /> },
       { path: "*", element: <NotFound /> },

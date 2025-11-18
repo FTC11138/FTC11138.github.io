@@ -17,10 +17,14 @@ export default function PastSeasons() {
   return (
     <section className="container-std py-16 text-white">
       <FloatIn delay={0}>
-        <div className="text-center mb-12">
+        <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-black tracking-tight">
             Past Seasons
           </h1>
+        </div>
+      </FloatIn>
+      <FloatIn delay={100}>
+        <div className="text-center mb-12">
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             Awards, Ranks, and Highlights from recent seasons
           </p>
@@ -29,7 +33,7 @@ export default function PastSeasons() {
 
       <div className="space-y-10">
         {list.map((season, index) => (
-          <FloatIn key={season.season} delay={100 + index * 80}>
+          <FloatIn key={season.season} delay={200 + index * 80}>
             <article className="rounded-3xl border border-white/10 bg-gradient-to-br from-black via-zinc-900 to-neutral-900 p-8 shadow-2xl shadow-black/40">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>

@@ -10,6 +10,7 @@ export default function Header() {
     { to: "/", label: "Home" },
     { to: "/competitions", label: "Competitions" },
     { to: "/robots", label: "Robots" },
+    { to: "/outreach", label: "Outreach" },
     { to: "/past-seasons", label: "Past Seasons" },
     { to: "/team", label: "Team" },
     // { to: "/donate", label: "Donate" },
@@ -21,37 +22,33 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-black/60 border-b border-white/5 backdrop-blur">
-      <div className="container-std relative flex h-16 items-center justify-between gap-4 text-white">
-        <div className="flex items-center gap-3 md:gap-4">
+      <div className="w-full px-4 md:px-8 flex h-16 items-center justify-between gap-6 text-white">
+        <div className="flex items-center gap-3 md:gap-4 shrink-0">
           <Logo />
         </div>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center justify-center absolute left-1/2 -translate-x-1/2">
-          <div className="relative mx-6 rounded-full border border-white/10 bg-white/5 backdrop-blur px-4 py-1">
-            <ul className="flex items-center gap-1.5 text-base font-medium tracking-tight">
-              {items.map((it) => (
-                <li key={it.to}>
-                  <NavLink
-                    to={it.to}
-                    className={({ isActive }) =>
-                      `relative z-10 px-3 py-1 rounded-full transition ${
-                        isActive
-                          ? "text-red-400"
-                          : "text-gray-200 hover:text-white"
-                      }`
-                    }
-                  >
-                    {it.label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <nav className="hidden md:flex items-center justify-center flex-1">
+          <ul className="flex flex-wrap items-center gap-2 text-sm font-medium tracking-tight rounded-full border border-white/10 bg-white/5 backdrop-blur px-4 py-1">
+            {items.map((it) => (
+              <li key={it.to}>
+                <NavLink
+                  to={it.to}
+                  className={({ isActive }) =>
+                    `relative z-10 px-3 py-1 rounded-full transition ${
+                      isActive ? "text-red-400" : "text-gray-200 hover:text-white"
+                    }`
+                  }
+                >
+                  {it.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </nav>
 
         {/* Right action */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 shrink-0">
           <button
             type="button"
             className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white shadow-sm transition hover:bg-white/10 md:hidden"
@@ -82,7 +79,7 @@ export default function Header() {
             className="hidden md:inline-flex rounded-full bg-red-600 text-white px-5 py-2 text-sm font-semibold shadow-lg shadow-red-600/40 hover:bg-red-500 transition-colors"
             aria-label="Join Robo Eclipse"
           >
-            Join the crew
+            Contact Us
           </NavLink>
         </div>
       </div>
@@ -113,10 +110,10 @@ export default function Header() {
             ))}
             <li>
               <NavLink
-                to="/join"
+                to="/contact"
                 className="block rounded-lg bg-red-600 px-3 py-2 text-center font-semibold text-white shadow-lg shadow-red-600/30 hover:bg-red-500 transition-colors"
               >
-                Join the crew
+                Contact Us
               </NavLink>
             </li>
           </ul>
