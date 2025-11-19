@@ -17,7 +17,7 @@ body {
 
 /* small helpers */
 .container-std {
-  @apply mx-auto max-w-6xl px-4;
+  @apply px-32;
 }
 .section {
   @apply py-10;
