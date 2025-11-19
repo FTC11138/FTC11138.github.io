@@ -35,7 +35,10 @@ export default function Team() {
 
   const renderMemberCard = (person: Member, delay: number) => (
     <FloatIn key={person.id} delay={delay} className="h-full">
-      <article className="h-full flex flex-col group rounded-3xl border border-white/10 bg-black/70 shadow-lg shadow-black/40 hover:-translate-y-1 transition-all duration-200">
+      <article
+        data-reveal
+        className="h-full flex flex-col rounded-3xl border border-white/10 bg-black/70"
+      >
         <div className="p-8 flex-1 flex flex-col items-center text-center">
           {person.links?.image ? (
             <img
@@ -116,23 +119,28 @@ export default function Team() {
           <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             {coaches.map((coach, index) => (
               <FloatIn key={coach.id} delay={200 + index * 100}>
-                <article className="rounded-3xl border border-red-500/30 bg-black/70 p-6 shadow-lg shadow-black/40">
-                  <p className="text-xs uppercase tracking-[0.4em] text-red-300">
-                    C O A C H
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold text-white">
-                    {coach.name}
-                  </h3>
-                  {coach.role?.length ? (
-                    <p className="mt-2 text-sm text-gray-400">
-                      {coach.role.join(" / ")}
+                <article
+                  data-reveal
+                  className="rounded-3xl border border-red-500/30 bg-black/70 p-6"
+                >
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.4em] text-red-300">
+                      C O A C H
                     </p>
-                  ) : null}
-                  <p className="mt-4 text-gray-300 text-sm">
-                    {coach.bio ??
-                      coach.description ??
-                      "Volunteer mentor guiding design reviews, match strategy, and outreach."}
-                  </p>
+                    <h3 className="mt-3 text-2xl font-semibold text-white">
+                      {coach.name}
+                    </h3>
+                    {coach.role?.length ? (
+                      <p className="mt-2 text-sm text-gray-400">
+                        {coach.role.join(" / ")}
+                      </p>
+                    ) : null}
+                    <p className="mt-4 text-gray-300 text-sm">
+                      {coach.bio ??
+                        coach.description ??
+                        "Volunteer mentor guiding design reviews, match strategy, and outreach."}
+                    </p>
+                  </div>
                 </article>
               </FloatIn>
             ))}
