@@ -36,3 +36,10 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 767px) {
+  .reveal-enabled {
+    opacity: 1;
+    transform: none;
+  }
+}

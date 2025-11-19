@@ -13,7 +13,7 @@ const cards = [
   {
     eyebrow: "Mentors & Sponsors",
     title: "Coach or back the team",
-    copy: "Industry mentors keep us accountable while sponsors power travel, registration fees, and machine shop upgrades. From sheet metal to software critiques, we welcome your expertise.",
+    copy: "Industry mentors keep us accountable while sponsors power travel and registration fees. From sheet metal to software critiques, we welcome your expertise.",
     action: {
       label: "Request the sponsor kit",
       href: "mailto:ftc11138robotics@gmail.com?subject=Sponsor%20packet%20request",

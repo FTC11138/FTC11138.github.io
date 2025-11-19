@@ -135,7 +135,7 @@ export default function Programs() {
               <article className="relative flex gap-6 md:gap-10">
                 {/* Timeline marker */}
                 <div className="flex flex-col items-center shrink-0">
-                  <div className="hidden md:block w-12" />
+                  <div className="hidden md:block w-13" />
                   <div className="md:-ml-1 flex items-center justify-center">
                     <div className="w-4 h-4 rounded-full bg-red-400 shadow-lg shadow-red-500/40 border border-white" />
                   </div>
