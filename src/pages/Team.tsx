@@ -100,15 +100,15 @@ export default function Team() {
   return (
     <section className="container-std py-20 text-white">
       <FloatIn delay={0}>
-        <div className="max-w-2xl mx-auto text-center mb-10">
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
+        <div className="max-w-2xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-black tracking-tight">
             Meet Our Team
           </h1>
         </div>
       </FloatIn>
       <FloatIn delay={100}>
-        <div className="max-w-2xl mx-auto text-center mb-10">
-          <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             Meet the coaches and students behind Robo Eclipse.
           </p>
         </div>

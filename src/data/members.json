@@ -34,7 +34,7 @@
       "school": "Eastlake High School",
       "grade": "Grade 10",
       "yearsOnTeam": 3,
-      "links": { "image": "michael.avif" }
+      "links": { "image": "michael.jpg" }
     },
     {
       "id": "sophia-xu",
@@ -79,7 +79,7 @@
       "school": "Redmond High School",
       "grade": "Grade 9",
       "yearsOnTeam": 1,
-      "links": { "image": "aarush.png" }
+      "links": { "image": "aarush.jpg" }
     },
     {
       "id": "anish-agrawal",

@@ -5,10 +5,11 @@
     "season": "2024-2025 · INTO THE DEEP",
     "description": "Dual-stage carbon fiber slides, drone launcher, and camera-driven targeting built for rapid scoring.",
     "specs": [
-      "Road Runner + AprilTag localization stack",
-      "3-second pixel cycle time",
-      "Dual-operator control layout",
-      "Quick-swap intake modules"
+      "PedroPathing + AprilTag localization",
+      "7-second sample cycle time",
+      "4-second specimen cycle time",
+      "Single Driver control layout",
+      "Command System driven software"
     ],
     "stats": [
       "Control Award Winner",
@@ -24,10 +25,9 @@
     "season": "2023-2024 · CENTERSTAGE",
     "description": "Dual-stage carbon fiber slides, drone launcher, and camera-driven targeting built for rapid scoring.",
     "specs": [
-      "Road Runner + AprilTag localization stack",
-      "3-second pixel cycle time",
-      "Dual-operator control layout",
-      "Quick-swap intake modules"
+      "Road Runner + AprilTag localization",
+      "8-second pixel cycle time",
+      "Dual-operator control layout"
     ],
     "stats": [
       "12-0 league record",
@@ -43,9 +43,9 @@
     "season": "2022-2023 · POWER PLAY",
     "description": "Compact turreted arm with adaptive scoring presets to dominate junction control.",
     "specs": [
-      "360° turret with slip ring cable management",
-      "PID-tuned virtual four-bar",
-      "Auto path library for every starting tile"
+      "360° turntable with slip ring cable management",
+      "PID-tuned double slide lift",
+      "OpenCV Signal sleeve detection pipeline"
     ],
     "stats": ["Winning Alliance 1st Pick", "Inspire Award 2nd Place"],
     "media": "pulse.jpg",

@@ -30,10 +30,14 @@ export default function Robots() {
   return (
     <section className="container-std py-16 text-white">
       <FloatIn delay={0}>
-        <div className="text-center mb-12">
+        <div className="text-center">
           <h1 className="text-5xl md:text-6xl font-black tracking-tight">
             Our Robots
           </h1>
+        </div>
+      </FloatIn>
+      <FloatIn delay={100}>
+        <div className="text-center mb-12">
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
             Hardware we’ve shipped to the field
           </p>
@@ -42,7 +46,7 @@ export default function Robots() {
 
       <div className="space-y-10">
         {list.map((robot, index) => (
-          <FloatIn key={robot.id} delay={100 + index * 80}>
+          <FloatIn key={robot.id} delay={200 + index * 80}>
             <article className="rounded-3xl border border-white/10 bg-gradient-to-br from-black via-zinc-900 to-neutral-900 overflow-hidden shadow-2xl shadow-black/40">
               {robot.media ? (
                 <div className="w-full flex items-center m-6 justify-center overflow-hidden">
@@ -68,17 +72,37 @@ export default function Robots() {
                   </p>
                 </div>
                 <div className="border-t border-white/10 pt-6">
-                  <h3 className="text-sm uppercase tracking-[0.3em] text-gray-400">
-                    Highlights
-                  </h3>
-                  <ul className="mt-3 space-y-1 text-gray-200 text-sm">
-                    {robot.stats.map((stat) => (
-                      <li key={stat} className="flex gap-2">
-                        <span className="text-red-400">•</span>
-                        <span>{stat}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="grid gap-8 md:grid-cols-2">
+                    <div>
+                      <h3 className="text-sm uppercase tracking-[0.3em] text-gray-400">
+                        Highlights
+                      </h3>
+                      <ul className="mt-3 space-y-1 text-gray-200 text-sm">
+                        {robot.stats.map((stat) => (
+                          <li key={stat} className="flex gap-2">
+                            <span className="text-red-400">•</span>
+                            <span>{stat}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {robot.specs?.length ? (
+                      <div>
+                        <h3 className="text-sm uppercase tracking-[0.3em] text-gray-400">
+                          Specifications
+                        </h3>
+                        <ul className="mt-3 space-y-1 text-gray-200 text-sm">
+                          {robot.specs.map((spec) => (
+                            <li key={spec} className="flex gap-2">
+                              <span className="text-red-400">•</span>
+                              <span>{spec}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                  </div>
                 </div>
               </div>
             </article>
