@@ -17,15 +17,10 @@ body {
 
 /* small helpers */
 .container-std {
-  @apply px-32;
+  @apply px-6 md:px-32;
 }
 .section {
-  @apply py-10;
-}
-@screen md {
-  .section {
-    @apply py-14;
-  }
+  @apply py-10 md:py-14;
 }
 .card {
   @apply rounded-2xl border bg-white shadow-sm;

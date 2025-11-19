@@ -28,7 +28,7 @@ export default function Header() {
         </div>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center justify-center flex-1">
+        <nav className="hidden lg:flex items-center justify-center flex-1">
           <ul className="flex flex-wrap items-center gap-2 text-sm font-medium tracking-tight rounded-full border border-white/10 bg-white/5 backdrop-blur px-4 py-1">
             {items.map((it) => (
               <li key={it.to}>
@@ -36,7 +36,9 @@ export default function Header() {
                   to={it.to}
                   className={({ isActive }) =>
                     `relative z-10 px-3 py-1 rounded-full transition ${
-                      isActive ? "text-red-400" : "text-gray-200 hover:text-white"
+                      isActive
+                        ? "text-red-400"
+                        : "text-gray-200 hover:text-white"
                     }`
                   }
                 >
@@ -51,7 +53,7 @@ export default function Header() {
         <div className="flex items-center gap-3 shrink-0">
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white shadow-sm transition hover:bg-white/10 md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white shadow-sm transition hover:bg-white/10 lg:hidden"
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -76,7 +78,7 @@ export default function Header() {
           </button>
           <NavLink
             to="/contact"
-            className="hidden md:inline-flex rounded-full bg-red-600 text-white px-5 py-2 text-sm font-semibold shadow-lg shadow-red-600/40 hover:bg-red-500 transition-colors"
+            className="hidden lg:inline-flex rounded-full bg-red-600 text-white px-5 py-2 text-sm font-semibold shadow-lg shadow-red-600/40 hover:bg-red-500 transition-colors"
             aria-label="Join Robo Eclipse"
           >
             Contact Us
@@ -86,7 +88,7 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       <div
-        className={`md:hidden transition-[max-height,opacity] duration-200 ease-out ${
+        className={`lg:hidden transition-[max-height,opacity] duration-200 ease-out ${
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden`}
       >
