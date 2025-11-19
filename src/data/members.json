@@ -1,0 +1,135 @@
+{
+  "students": [
+    {
+      "id": "ryan-chhabra",
+      "name": "Ryan Chhabra",
+      "role": ["Software Lead"],
+      "school": "Tesla STEM High School",
+      "grade": "Grade 12",
+      "yearsOnTeam": 4,
+      "links": { "image": "ryan.jpg" }
+    },
+    {
+      "id": "daren-lang",
+      "name": "Daren Lang",
+      "role": ["Hardware Lead"],
+      "school": "Eastside Preparatory School",
+      "grade": "Grade 12",
+      "yearsOnTeam": 4,
+      "links": { "image": "daren.avif" }
+    },
+    {
+      "id": "jianna-liu",
+      "name": "Jianna Liu",
+      "role": ["Outreach Lead"],
+      "school": "Newport High School",
+      "grade": "Grade 11",
+      "yearsOnTeam": 3,
+      "links": { "image": "jianna.png" }
+    },
+    {
+      "id": "michael-hu",
+      "name": "Michael Hu",
+      "role": ["Hardware"],
+      "school": "Eastlake High School",
+      "grade": "Grade 10",
+      "yearsOnTeam": 3,
+      "links": { "image": "michael.avif" }
+    },
+    {
+      "id": "sophia-xu",
+      "name": "Sophia Xu",
+      "role": ["Hardware", "Software"],
+      "school": "Lakeside School",
+      "grade": "Grade 8",
+      "yearsOnTeam": 2,
+      "links": { "image": "sophia.avif" }
+    },
+    {
+      "id": "caden-yang",
+      "name": "Caden Yang",
+      "role": ["Hardware"],
+      "school": "North Star Middle School",
+      "grade": "Grade 8",
+      "yearsOnTeam": 2,
+      "links": { "image": "caden.png" }
+    },
+    {
+      "id": "alvin-qiu",
+      "name": "Alvin Qiu",
+      "role": ["Hardware"],
+      "school": "Henry M. Jackson High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 2,
+      "links": { "image": "alvin.avif" }
+    },
+    {
+      "id": "lahari-ganti",
+      "name": "Lahari Ganti",
+      "role": ["Scouting Lead"],
+      "school": "Skyline High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": { "image": "lahari.avif" }
+    },
+    {
+      "id": "aarush-kikkuru",
+      "name": "Aarush Kikkuru",
+      "role": ["Software"],
+      "school": "Redmond High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": { "image": "aarush.png" }
+    },
+    {
+      "id": "anish-agrawal",
+      "name": "Anish Agrawal",
+      "role": ["Hardware", "Software"],
+      "school": "UW Robinson",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": { "image": "anish.png" }
+    },
+    {
+      "id": "anirudh-ulabala",
+      "name": "Anirudh Ulabala",
+      "role": ["Software"],
+      "school": "Leota Middle School",
+      "grade": "Grade 8",
+      "yearsOnTeam": 1,
+      "links": { "image": "anirudh.png" }
+    },
+    {
+      "id": "jordan-zhang",
+      "name": "Jordan Zhang",
+      "role": ["Hardware"],
+      "school": "Inglewood Middle School",
+      "grade": "Grade 7",
+      "yearsOnTeam": 1,
+      "links": { "image": "jordan.avif" }
+    }
+  ],
+  "coaches": [
+    {
+      "id": "luke-zhang",
+      "name": "Luke Zhang",
+      "role": ["Hardware"],
+      "description": "Guides manufacturing reviews, keeps the shop safe, and helps students iterate clean mechanisms.",
+      "links": { "image": "luke-zhang.jpg" }
+    },
+    {
+      "id": "kyle-liu",
+      "name": "Kyle Liu",
+      "role": ["Outreach"],
+      "description": "Supports sponsor relations, storytelling, and community demos so our impact reaches beyond the field.",
+      "links": { "image": "kyle-liu.jpg" }
+    },
+    {
+      "id": "surendra-ulabala",
+      "name": "Surendra Ulabala",
+      "role": ["Software"],
+      "description": "Mentors the programming crew on clean architecture, autonomous debugging, and code reviews.",
+      "links": { "image": "surendra-ulabala.jpg" }
+    }
+  ]
+}

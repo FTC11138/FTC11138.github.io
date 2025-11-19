@@ -1,0 +1,54 @@
+[
+  {
+    "id": "dusk",
+    "name": "DUSK",
+    "season": "2024-2025 · INTO THE DEEP",
+    "description": "Dual-stage carbon fiber slides, drone launcher, and camera-driven targeting built for rapid scoring.",
+    "specs": [
+      "Road Runner + AprilTag localization stack",
+      "3-second pixel cycle time",
+      "Dual-operator control layout",
+      "Quick-swap intake modules"
+    ],
+    "stats": [
+      "Control Award Winner",
+      "3rd Place at State",
+      "Connect Award Winner"
+    ],
+    "media": "dusk.png",
+    "accent": "#ef4444"
+  },
+  {
+    "id": "celest-2",
+    "name": "CELEST 2.0",
+    "season": "2023-2024 · CENTERSTAGE",
+    "description": "Dual-stage carbon fiber slides, drone launcher, and camera-driven targeting built for rapid scoring.",
+    "specs": [
+      "Road Runner + AprilTag localization stack",
+      "3-second pixel cycle time",
+      "Dual-operator control layout",
+      "Quick-swap intake modules"
+    ],
+    "stats": [
+      "12-0 league record",
+      "Winning Alliance Captain",
+      "Think Award 2nd at State"
+    ],
+    "media": "halo2.jpg",
+    "accent": "#337BCD"
+  },
+  {
+    "id": "celest",
+    "name": "CELEST 1.0",
+    "season": "2022-2023 · POWER PLAY",
+    "description": "Compact turreted arm with adaptive scoring presets to dominate junction control.",
+    "specs": [
+      "360° turret with slip ring cable management",
+      "PID-tuned virtual four-bar",
+      "Auto path library for every starting tile"
+    ],
+    "stats": ["Winning Alliance 1st Pick", "Inspire Award 2nd Place"],
+    "media": "pulse.jpg",
+    "accent": "#f97316"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "season": "2024-2025",
+    "game": "INTO THE DEEP",
+    "highlights": [
+      {
+        "event": "Bardeen League Meets 1 & 2",
+        "notes": ["Rank 2 (9-3-0)"]
+      },
+      {
+        "event": "Tesla Interleague",
+        "notes": [
+          "Finalist Alliance Captain",
+          "Connect Award Winner"
+        ]
+      },
+      {
+        "event": "Asimov Semifinal",
+        "notes": ["Control Award Winner"]
+      },
+      {
+        "event": "Washington State Championships",
+        "notes": ["Motivate Award 2nd Place"]
+      }
+    ]
+  },
+  {
+    "season": "2023-2024",
+    "game": "CENTERSTAGE",
+    "highlights": [
+      {
+        "event": "Turing League Meets 1 & 2",
+        "notes": ["Rank 1", "Undefeated (12-0-0)"]
+      },
+      {
+        "event": "Pasteur Interleague",
+        "notes": [
+          "Winning Alliance Captain",
+          "Connect Award Winner",
+          "Inspire Award 3rd Place",
+          "Think Award 3rd Place"
+        ]
+      },
+      {
+        "event": "Washington State Championships",
+        "notes": ["Think Award 2nd Place"]
+      }
+    ]
+  },
+  {
+    "season": "2022-2023",
+    "game": "POWERPLAY",
+    "highlights": [
+      {
+        "event": "Turing League Meets 1 & 2",
+        "notes": [
+          "Rank 2 (10-2-0)"
+        ]
+      },
+      {
+        "event": "Pasteur Interleague",
+        "notes": [
+          "Winning Alliance 1st Pick",
+          "Inspire Award 2nd Place",
+          "Think Award 3rd Place"
+        ]
+      }
+    ]
+  },
+  {
+    "season": "2021-2022",
+    "game": "FREIGHT FRENZY",
+    "highlights": [
+      {
+        "event": "Pasteur Interleague",
+        "notes": [
+          "Connect Award Winner",
+          "Inspire Award 2nd Place",
+          "Control Award 2nd Place",
+          "Motivate Award 3rd Place"
+        ]
+      },
+      {
+        "event": "Washington State Championships",
+        "notes": [
+          "Think Award Winner",
+          "Connect Award 2nd Place"
+        ]
+      }
+    ]
+  }
+]
