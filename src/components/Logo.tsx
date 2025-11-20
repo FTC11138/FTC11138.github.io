@@ -8,7 +8,7 @@ export default function Logo() {
       <img
         src={logo}
         alt="Robo Eclipse logo"
-        className="h-15 w-15 rounded-xl bg-black/70 transition group-hover:scale-[1.02]"
+        className="h-15 w-15 rounded-xl transition group-hover:scale-[1.02]"
       />
       <span className="flex flex-col leading-tight text-white">
         <span className="text-xl font-black tracking-tight">Robo Eclipse</span>
