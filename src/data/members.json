@@ -119,15 +119,17 @@
       }
     },
     {
-      "id": "vihaan",
-      "name": "Vihaan",
+      "id": "vihaan-krishnan",
+      "name": "Vihaan Krishnan",
       "role": [
         "Software"
       ],
       "school": "Pine Lake Middle School",
       "grade": "Grade 7",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "vihaan.jpg"
+      }
     },
     {
       "id": "hedong",
@@ -141,48 +143,56 @@
       "links": {}
     },
     {
-      "id": "jack",
-      "name": "Jack",
+      "id": "jack-liu",
+      "name": "Jack Liu",
       "role": [
         "Hardware"
       ],
       "school": "Tyee Middle School",
       "grade": "Grade 8",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "jack.jpg"
+      }
     },
     {
-      "id": "amy",
-      "name": "Amy",
+      "id": "aimee-yang",
+      "name": "Aimee Yang",
       "role": [
         "Hardware"
       ],
       "school": "Newport High School",
       "grade": "Grade 9",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "aimee.jpg"
+      }
     },
     {
-      "id": "emily",
-      "name": "Emily",
+      "id": "emily-wang",
+      "name": "Emily Wang",
       "role": [
         "Software"
       ],
       "school": "Newport High School",
       "grade": "Grade 9",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "emily.jpg"
+      }
     },
     {
-      "id": "charlie",
-      "name": "Charlie",
+      "id": "charlie-shi",
+      "name": "Charlie Shi",
       "role": [
         "Hardware"
       ],
       "school": "Eastlake High School",
       "grade": "Grade 10",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "charlie.jpg"
+      }
     }
   ],
   "coaches": [
