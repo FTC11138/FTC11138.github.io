@@ -28,6 +28,24 @@
       "links": { "image": "jianna.avif" }
     },
     {
+      "id": "anish-agrawal",
+      "name": "Anish Agrawal",
+      "role": ["Hardware", "Software"],
+      "school": "UW Robinson",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": { "image": "anish.png" }
+    },
+    {
+      "id": "aarush-kikkuru",
+      "name": "Aarush Kikkuru",
+      "role": ["Software"],
+      "school": "Redmond High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": { "image": "aarush.jpg" }
+    },
+    {
       "id": "michael-hu",
       "name": "Michael Hu",
       "role": ["Hardware"],
@@ -37,22 +55,13 @@
       "links": { "image": "michael.jpg" }
     },
     {
-      "id": "sophia-xu",
-      "name": "Sophia Xu",
-      "role": ["Hardware", "Software"],
-      "school": "Lakeside School",
+      "id": "anirudh-ulabala",
+      "name": "Anirudh Ulabala",
+      "role": ["Software"],
+      "school": "Leota Middle School",
       "grade": "Grade 8",
-      "yearsOnTeam": 2,
-      "links": { "image": "sophia.avif" }
-    },
-    {
-      "id": "caden-yang",
-      "name": "Caden Yang",
-      "role": ["Hardware"],
-      "school": "North Star Middle School",
-      "grade": "Grade 8",
-      "yearsOnTeam": 2,
-      "links": { "image": "caden.png" }
+      "yearsOnTeam": 1,
+      "links": { "image": "anirudh.png" }
     },
     {
       "id": "alvin-qiu",
@@ -73,49 +82,67 @@
       "links": { "image": "lahari.avif" }
     },
     {
-      "id": "aarush-kikkuru",
-      "name": "Aarush Kikkuru",
+      "id": "vihaan",
+      "name": "Vihaan",
       "role": ["Software"],
-      "school": "Redmond High School",
-      "grade": "Grade 9",
-      "yearsOnTeam": 1,
-      "links": { "image": "aarush.jpg" }
-    },
-    {
-      "id": "anish-agrawal",
-      "name": "Anish Agrawal",
-      "role": ["Hardware", "Software"],
-      "school": "UW Robinson",
-      "grade": "Grade 9",
-      "yearsOnTeam": 1,
-      "links": { "image": "anish.png" }
-    },
-    {
-      "id": "anirudh-ulabala",
-      "name": "Anirudh Ulabala",
-      "role": ["Software"],
-      "school": "Leota Middle School",
-      "grade": "Grade 8",
-      "yearsOnTeam": 1,
-      "links": { "image": "anirudh.png" }
-    },
-    {
-      "id": "jordan-zhang",
-      "name": "Jordan Zhang",
-      "role": ["Hardware"],
-      "school": "Inglewood Middle School",
+      "school": "Pine Lake Middle School",
       "grade": "Grade 7",
       "yearsOnTeam": 1,
-      "links": { "image": "jordan.avif" }
+      "links": {}
+    },
+    {
+      "id": "hedong",
+      "name": "Hedong",
+      "role": ["Hardware"],
+      "school": "Tyee Middle School",
+      "grade": "Grade 8",
+      "yearsOnTeam": 1,
+      "links": {}
+    },
+    {
+      "id": "jack",
+      "name": "Jack",
+      "role": ["Hardware"],
+      "school": "Tyee Middle School",
+      "grade": "Grade 8",
+      "yearsOnTeam": 1,
+      "links": {}
+    },
+    {
+      "id": "amy",
+      "name": "Amy",
+      "role": ["Hardware"],
+      "school": "Newport High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": {}
+    },
+    {
+      "id": "emily",
+      "name": "Emily",
+      "role": ["Software"],
+      "school": "Newport High School",
+      "grade": "Grade 9",
+      "yearsOnTeam": 1,
+      "links": {}
+    },
+    {
+      "id": "charlie",
+      "name": "Charlie",
+      "role": ["Hardware"],
+      "school": "Eastlake High School",
+      "grade": "Grade 10",
+      "yearsOnTeam": 1,
+      "links": {}
     }
   ],
   "coaches": [
     {
-      "id": "luke-zhang",
-      "name": "Luke Zhang",
-      "role": ["Hardware"],
-      "description": "Guides manufacturing reviews, keeps the shop safe, and helps students iterate clean mechanisms.",
-      "links": { "image": "luke-zhang.jpg" }
+      "id": "weigang-hu",
+      "name": "Weigang Hu",
+      "role": ["Hardware", "Head Coach"],
+      "description": "Leads team operations and guides manufacturing reviews, keeps the shop safe, and helps students iterate clean mechanisms.",
+      "links": {}
     },
     {
       "id": "kyle-liu",
