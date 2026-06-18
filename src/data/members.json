@@ -1,32 +1,6 @@
 {
   "students": [
     {
-      "id": "ryan-chhabra",
-      "name": "Ryan Chhabra",
-      "role": [
-        "Software Lead"
-      ],
-      "school": "Tesla STEM High School",
-      "grade": "Grade 12",
-      "yearsOnTeam": 5,
-      "links": {
-        "image": "ryan.jpg"
-      }
-    },
-    {
-      "id": "daren-lang",
-      "name": "Daren Lang",
-      "role": [
-        "Hardware Lead"
-      ],
-      "school": "Eastside Preparatory School",
-      "grade": "Grade 12",
-      "yearsOnTeam": 5,
-      "links": {
-        "image": "daren.avif"
-      }
-    },
-    {
       "id": "jianna-liu",
       "name": "Jianna Liu",
       "role": [
@@ -40,24 +14,10 @@
       }
     },
     {
-      "id": "anish-agrawal",
-      "name": "Anish Agrawal",
-      "role": [
-        "Hardware",
-        "Software"
-      ],
-      "school": "UW Robinson",
-      "grade": "Grade 9",
-      "yearsOnTeam": 3,
-      "links": {
-        "image": "anish.jpeg"
-      }
-    },
-    {
       "id": "aarush-kikkuru",
       "name": "Aarush Kikkuru",
       "role": [
-        "Software"
+        "Software Lead"
       ],
       "school": "Redmond High School",
       "grade": "Grade 9",
@@ -70,7 +30,7 @@
       "id": "michael-hu",
       "name": "Michael Hu",
       "role": [
-        "Hardware"
+        "Hardware Lead"
       ],
       "school": "Eastlake High School",
       "grade": "Grade 10",
@@ -226,6 +186,51 @@
       "description": "Mentors the programming crew on clean architecture, autonomous debugging, and code reviews.",
       "links": {
         "image": "surendra-ulabala.jpg"
+      }
+    }
+  ],
+  "alumni": [
+    {
+      "id": "ryan-chhabra",
+      "name": "Ryan Chhabra",
+      "role": [
+        "Software Lead"
+      ],
+      "school": "Tesla STEM High School",
+      "yearsOnTeam": 5,
+      "graduationYear": 2026,
+      "college": "University of Washington",
+      "links": {
+        "image": "ryan.jpg"
+      }
+    },
+    {
+      "id": "daren-lang",
+      "name": "Daren Lang",
+      "role": [
+        "Hardware Lead"
+      ],
+      "school": "Eastside Preparatory School",
+      "yearsOnTeam": 5,
+      "graduationYear": 2026,
+      "college": "Tufts University",
+      "links": {
+        "image": "daren.avif"
+      }
+    },
+    {
+      "id": "anish-agrawal",
+      "name": "Anish Agrawal",
+      "role": [
+        "Hardware",
+        "Software"
+      ],
+      "school": "UW Robinson",
+      "yearsOnTeam": 3,
+      "graduationYear": 2026,
+      "college": "University of Washington",
+      "links": {
+        "image": "anish.jpeg"
       }
     }
   ]

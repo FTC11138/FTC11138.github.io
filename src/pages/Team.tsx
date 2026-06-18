@@ -10,13 +10,16 @@ type Member = {
   description?: string;
   school?: string;
   grade?: string;
+  graduationYear?: number;
+  college?: string;
   links?: { image?: string };
 };
 
 export default function Team() {
-  const { students = [], coaches = [] } = members as {
+  const { students = [], coaches = [], alumni = [] } = members as {
     students?: Member[];
     coaches?: Member[];
+    alumni?: Member[];
   };
   const imageMap = import.meta.glob("../assets/people/*", {
     eager: true,
@@ -151,6 +154,55 @@ export default function Team() {
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8">
         {students.map((t, i) => renderMemberCard(t, 500 + i * 100))}
       </div>
+
+      {alumni.length ? (
+        <div className="mt-20">
+          <FloatIn delay={0}>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-10">
+              Alumni
+            </h2>
+          </FloatIn>
+          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+            {alumni.map((alum, index) => (
+              <FloatIn key={alum.id} delay={100 + index * 100} className="h-full">
+                <article
+                  data-reveal
+                  className="h-full flex flex-col rounded-3xl border border-amber-500/20 bg-black/70"
+                >
+                  <div className="p-8 flex-1 flex flex-col items-center text-center">
+                    {alum.links?.image ? (
+                      <img
+                        src={resolveImage(alum.links.image)}
+                        alt={alum.name}
+                        className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 grayscale-[30%]"
+                        onError={(e) => {
+                          (e.currentTarget as HTMLImageElement).style.display = "none";
+                        }}
+                      />
+                    ) : (
+                      <div className="h-48 w-48 rounded-full bg-white/10" />
+                    )}
+
+                    <h3 className="mt-4 text-xl font-semibold text-white">
+                      {alum.name}
+                    </h3>
+                    <p className="mt-1 text-sm text-gray-400">
+                      Class of {alum.graduationYear}
+                    </p>
+                    <p className="text-sm text-gray-400">
+                      {alum.college}
+                    </p>
+
+                    <p className="mt-3 text-xs text-gray-500">
+                      {alum.yearsOnTeam} year{(alum.yearsOnTeam ?? 0) !== 1 ? "s" : ""} on team
+                    </p>
+                  </div>
+                </article>
+              </FloatIn>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </section>
   );
 }
