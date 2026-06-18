@@ -12,6 +12,7 @@ type Member = {
   grade?: string;
   graduationYear?: number;
   college?: string;
+  yearsOnTeam?: number;
   links?: { image?: string };
 };
 
