@@ -9,6 +9,7 @@ type Highlight = {
 type Season = {
   season: string;
   game: string;
+  current?: boolean;
   highlights: Highlight[];
 };
 
@@ -57,6 +58,15 @@ export default function PastSeasons() {
                       <span className="inline-flex items-center rounded-full border border-red-400/40 bg-red-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-red-200">
                         {season.season}
                       </span>
+                      {season.current && (
+                        <span className="inline-flex items-center gap-1.5 rounded-full border border-green-400/40 bg-green-500/10 px-3 py-1 text-xs font-medium text-green-300">
+                          <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
+                          </span>
+                          Currently Competing
+                        </span>
+                      )}
                     </div>
                     <h2 className="mt-4 text-2xl md:text-3xl font-bold">
                       {season.game}
@@ -74,14 +84,16 @@ export default function PastSeasons() {
                       <h3 className="text-base md:text-lg font-semibold text-white">
                         {highlight.event}
                       </h3>
-                      <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
-                        {highlight.notes.map((note) => (
-                          <li key={note} className="flex items-start gap-2">
-                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-400" />
-                            <span>{note}</span>
-                          </li>
-                        ))}
-                      </ul>
+                      {highlight.notes.length > 0 && (
+                        <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
+                          {highlight.notes.map((note) => (
+                            <li key={note} className="flex items-start gap-2">
+                              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-400" />
+                              <span>{note}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   ))}
                 </div>

@@ -23,7 +23,7 @@ export const statsData: StatItem[] = [
   },
   {
     title: "Team Members",
-    maxNumber: 12,
+    maxNumber: 11,
     suffix: "",
     description: "Students from Grades 7-12",
   },
