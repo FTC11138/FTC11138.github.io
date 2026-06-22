@@ -34,7 +34,8 @@
       },
       {
         "event": "Canadian Rockies Premier Event @ KDays",
-        "notes": ["Upcoming"]
+        "notes": [],
+        "upcoming": true
       }
     ]
   },
@@ -120,7 +121,7 @@
         ]
       },
       {
-        "event": "WA Washington Tech Invitational",
+        "event": "Washington Tech Invitational",
         "notes": []
       },
       {
