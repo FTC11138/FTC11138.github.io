@@ -25,7 +25,7 @@ export default function Robots() {
     const match = Object.entries(imageMap).find(([path]) =>
       path.endsWith(`/${file}`)
     );
-    return match ? match[1] : `/assets/robots/${file}`;
+    return match ? match[1] : undefined;
   };
   return (
     <section className="container-std py-16 text-white">
@@ -47,17 +47,25 @@ export default function Robots() {
       <div className="space-y-10">
         {list.map((robot, index) => (
           <FloatIn key={robot.id} delay={200 + index * 80}>
-            <article className="rounded-3xl border border-white/10 bg-gradient-to-br from-black via-zinc-900 to-neutral-900 overflow-hidden shadow-2xl shadow-black/40">
-              {robot.media ? (
-                <div className="w-full flex items-center m-6 justify-center overflow-hidden">
-                  <img
-                    src={resolveImage(robot.media)}
-                    alt={robot.name}
-                    className="max-h-[26rem] object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              ) : null}
+            <article className="group relative rounded-3xl border border-white/10 bg-gradient-to-br from-black via-zinc-900 to-neutral-900 overflow-hidden shadow-2xl shadow-black/40">
+              {/* super slow fade-in accent glow */}
+              <div 
+                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[3000ms]" 
+                style={{ backgroundImage: `radial-gradient(circle at top right, ${robot.accent ? robot.accent + '25' : 'rgba(255,255,255,0.1)'}, transparent 60%)` }}
+              />
+              {(() => {
+                const img = resolveImage(robot.media);
+                return img ? (
+                  <div className="w-full flex items-center p-6 justify-center overflow-hidden">
+                    <img
+                      src={img}
+                      alt={robot.name}
+                      className="max-h-[26rem] object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : null;
+              })()}
 
               <div className="p-8 space-y-6">
                 <div className="text-left">

@@ -50,7 +50,7 @@ export default function PastSeasons() {
 
               <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-950 via-zinc-900/90 to-neutral-900/90 p-7 md:p-8 shadow-2xl shadow-black/40">
                 {/* subtle glow */}
-                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.24),transparent_55%)]" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[3000ms] bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.24),transparent_55%)]" />
 
                 {/* season header */}
                 <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -80,10 +80,10 @@ export default function PastSeasons() {
                   {season.highlights.map((highlight) => (
                     <div
                       key={`${season.season}-${highlight.event}`}
-                      className={`rounded-2xl border p-5 shadow-lg shadow-black/30 transition-transform duration-200 hover:-translate-y-1 ${
+                      className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 ${
                         highlight.notes.length > 0
-                          ? "border-red-500/20 bg-black/60"
-                          : "border-white/10 bg-black/40"
+                          ? "border-red-500/40 bg-red-950/20 shadow-red-500/10"
+                          : "border-white/5 bg-black/20 opacity-60 hover:opacity-100 shadow-black/20"
                       }`}
                     >
                       <h3 className="text-base md:text-lg font-semibold text-white">
@@ -96,7 +96,7 @@ export default function PastSeasons() {
                         <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
                           {highlight.notes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
-                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
+                              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
                               <span>{note}</span>
                             </li>
                           ))}

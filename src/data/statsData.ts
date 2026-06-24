@@ -11,15 +11,14 @@ export const statsData: StatItem[] = [
   {
     title: "Seasons Competed",
     maxNumber: 10,
-    suffix: "+",
-    description:
-      "Students and Coaches with years of FIRST Tech Challenge experience",
+    suffix: "",
+    description: "Since our rookie year in 2016",
   },
   {
-    title: "Awards Earned",
-    maxNumber: 15,
-    suffix: "+",
-    description: "Inspire, Control, and Think",
+    title: "Awards & Placements",
+    maxNumber: 32,
+    suffix: "",
+    description: "Across local, state, and world events",
   },
   {
     title: "Team Members",
@@ -29,8 +28,32 @@ export const statsData: StatItem[] = [
   },
   {
     title: "Outreach Hours",
-    maxNumber: 2800,
+    maxNumber: 3000,
     suffix: "+",
-    description: "Community workshops & demos",
+    description: "Total community workshops & demos",
+  },
+  {
+    title: "Hours This Season",
+    maxNumber: 400,
+    suffix: "+",
+    description: "Dedicated to robotics and outreach",
+  },
+  {
+    title: "People Reached This Season",
+    maxNumber: 2600,
+    suffix: "+",
+    description: "Through our community programs",
+  },
+  {
+    title: "Events Hosted & Attended",
+    maxNumber: 30,
+    suffix: "+",
+    description: "Engaging with the STEM community",
+  },
+  {
+    title: "Social Media Views",
+    maxNumber: 24,
+    suffix: "k",
+    description: "Sharing our journey online",
   },
 ];
