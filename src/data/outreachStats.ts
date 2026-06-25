@@ -7,8 +7,8 @@ export type OutreachStat = {
 };
 
 export const outreachStats: OutreachStat[] = [
-  { label: "Hours This Season", maxNumber: 294.5, decimals: 1 },
-  { label: "People Reached", maxNumber: 2524 },
-  { label: "Events", maxNumber: 31 },
-  { label: "Social Media Views", maxNumber: 19.7, suffix: "k", decimals: 1 },
+  { label: "Hours This Season", maxNumber: 400, suffix: "+" },
+  { label: "People Reached", maxNumber: 2600, suffix: "+" },
+  { label: "Events", maxNumber: 30, suffix: "+" },
+  { label: "Social Media Views", maxNumber: 24, suffix: "k" },
 ];
