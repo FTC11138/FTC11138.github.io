@@ -84,7 +84,7 @@ export default function PastSeasons() {
                     return (
                       <div
                         key={`${season.season}-${highlight.event}`}
-                        className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-rose-500/20 bg-black/40 hover:bg-rose-950/10 shadow-rose-500/5 ${
+                        className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-amber-500/20 bg-black/40 hover:bg-amber-950/20 shadow-amber-500/5 ${
                           isLastOdd ? "md:col-span-2 w-full md:w-3/4 lg:w-2/3 md:mx-auto" : ""
                         }`}
                       >
@@ -97,7 +97,7 @@ export default function PastSeasons() {
                         <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
                           {displayNotes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
-                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" />
                               <span className="-translate-y-[1px] leading-snug">{note}</span>
                             </li>
                           ))}
