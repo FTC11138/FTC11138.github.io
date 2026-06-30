@@ -29,7 +29,7 @@ function JiannaScare({ src, alt, className }: { src: string; alt: string; classN
 
   const [scared, setScared] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const scareImg = resolveImg("jianna2.jpg");
+  const scareImg = resolveImg("jianna2.png");
 
   const handleEnter = () => {
     timerRef.current = setTimeout(() => {
@@ -53,7 +53,7 @@ function JiannaScare({ src, alt, className }: { src: string; alt: string; classN
     <img
       src={scared && scareImg ? scareImg : src}
       alt={alt}
-      className={`${className} ${scared ? "scale-110 brightness-125" : ""} transition-transform duration-75`}
+      className={`${className} transition-none`}
       onMouseEnter={handleEnter}
       onMouseLeave={handleLeave}
       onError={(e) => {
@@ -218,10 +218,9 @@ export default function Team() {
       {alumni.length ? (
         <div className="mt-20">
           <FloatIn delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-2">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-10">
               Alumni
             </h2>
-            <p className="text-center text-gray-500 text-sm mb-10">Class of 2026</p>
           </FloatIn>
           <div className="flex flex-wrap justify-center gap-8">
             {alumni.map((alum, index) => (
