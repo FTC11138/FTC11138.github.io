@@ -50,7 +50,7 @@ export default function PastSeasons() {
 
               <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-950 via-zinc-900/90 to-neutral-900/90 p-7 md:p-8 shadow-2xl shadow-black/40">
                 {/* subtle glow */}
-                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[700ms] bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.24),transparent_55%)]" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[700ms] bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.15),transparent_55%)]" />
 
                 {/* season header */}
                 <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
@@ -79,13 +79,13 @@ export default function PastSeasons() {
                 <div className="relative mt-6 grid gap-5 md:grid-cols-2">
                   {season.highlights.map((highlight, index) => {
                     const isLastOdd = index === season.highlights.length - 1 && season.highlights.length % 2 !== 0;
-                    const displayNotes = highlight.notes.length > 0 ? highlight.notes : ["Competed"];
+                    const displayNotes = highlight.notes.length > 0 ? highlight.notes : ["Official Participant"];
 
                     return (
                       <div
                         key={`${season.season}-${highlight.event}`}
-                        className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-red-500/30 bg-black/40 hover:bg-red-950/10 shadow-red-500/5 ${
-                          isLastOdd ? "md:col-span-2 md:max-w-md md:mx-auto w-full" : ""
+                        className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-rose-500/20 bg-black/40 hover:bg-rose-950/10 shadow-rose-500/5 ${
+                          isLastOdd ? "md:col-span-2 w-full md:w-3/4 lg:w-2/3 md:mx-auto" : ""
                         }`}
                       >
                         <h3 className="text-base md:text-lg font-semibold text-white">
@@ -98,7 +98,7 @@ export default function PastSeasons() {
                           {displayNotes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
                               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
-                              <span className="leading-snug">{note}</span>
+                              <span className="-translate-y-[1px] leading-snug">{note}</span>
                             </li>
                           ))}
                         </ul>
