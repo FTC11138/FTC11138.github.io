@@ -222,50 +222,92 @@ export default function Team() {
               Alumni
             </h2>
           </FloatIn>
-          <div className="flex flex-wrap justify-center gap-8">
-            {alumni.map((alum, index) => (
-              <div key={alum.id} className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.34rem)]">
-                <FloatIn delay={100 + index * 150} className="h-full">
-                  <article
-                    data-reveal
-                    className="group h-full flex flex-col rounded-3xl border border-amber-500/20 bg-gradient-to-b from-amber-950/20 to-black/70 hover:border-amber-500/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
-                  >
-                    <div className="p-8 flex-1 flex flex-col items-center text-center">
-                      {alum.links?.image ? (
-                        <div className="relative">
-                          <img
-                            src={resolveImage(alum.links.image)}
-                            alt={alum.name}
-                            className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 group-hover:ring-amber-400/60 transition-all duration-500 grayscale-[20%] group-hover:grayscale-0"
-                            onError={(e) => {
-                              (e.currentTarget as HTMLImageElement).style.display = "none";
-                            }}
-                          />
-                          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        </div>
-                      ) : (
-                        <div className="h-48 w-48 rounded-full bg-white/10" />
-                      )}
-
-                      <h3 className="mt-4 text-xl font-semibold text-white group-hover:text-amber-100 transition-colors duration-300">
-                        {alum.name}
-                      </h3>
-                      <p className="mt-1 text-sm text-amber-300/70">
-                        Class of {alum.graduationYear}
-                      </p>
-                      <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                        {alum.college}
-                      </p>
-
-                      <p className="mt-3 text-xs text-gray-500">
-                        {alum.yearsOnTeam} year{(alum.yearsOnTeam ?? 0) !== 1 ? "s" : ""} on team
-                      </p>
-                    </div>
-                  </article>
+          {Object.entries(
+            alumni.reduce((acc, alum) => {
+              const year = alum.graduationYear || 'Unknown';
+              if (!acc[year]) acc[year] = [];
+              acc[year].push(alum);
+              return acc;
+            }, {} as Record<string, typeof alumni>)
+          )
+            .sort(([a], [b]) => Number(b) - Number(a))
+            .map(([year, yearAlumni]) => (
+              <div key={year} className="mb-16 last:mb-0">
+                <FloatIn delay={0}>
+                  <h3 className="text-2xl font-semibold text-amber-500/90 text-center mb-8 pb-2 border-b border-amber-500/20 max-w-sm mx-auto">
+                    {year === 'Unknown' ? 'Earlier Alumni' : `${year} Alumni`}
+                  </h3>
                 </FloatIn>
+                <div className="flex flex-wrap justify-center gap-8">
+                  {yearAlumni.map((alum, index) => (
+                    <div key={alum.id} className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.34rem)]">
+                      <FloatIn delay={100 + index * 150} className="h-full">
+                        <article
+                          data-reveal
+                          className="group h-full flex flex-col rounded-3xl border border-amber-500/20 bg-gradient-to-b from-amber-950/20 to-black/70 hover:border-amber-500/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
+                        >
+                          <div className="p-8 flex-1 flex flex-col items-center text-center">
+                            {alum.links?.image ? (
+                              <div className="relative">
+                                <img
+                                  src={resolveImage(alum.links.image)}
+                                  alt={alum.name}
+                                  className={`h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 group-hover:ring-amber-400/60 transition-all duration-500 grayscale-[20%] group-hover:grayscale-0 ${
+                                    alum.id === "anish-agrawal" ? "-rotate-[5deg]" : ""
+                                  }`}
+                                  onError={(e) => {
+                                    (e.currentTarget as HTMLImageElement).style.display = "none";
+                                  }}
+                                />
+                                <div className="absolute inset-0 rounded-full bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                              </div>
+                            ) : (
+                              <div className="h-48 w-48 rounded-full bg-white/10" />
+                            )}
+
+                            <h3 className="mt-4 text-xl font-semibold text-white group-hover:text-amber-100 transition-colors duration-300">
+                              {alum.name}
+                            </h3>
+                            
+                            {(() => {
+                              const subteams = alum.role
+                                ? Array.from(new Set(
+                                    alum.role.reduce<string[]>((acc, r) => {
+                                      if (r.includes('Software')) acc.push('Software');
+                                      if (r.includes('Hardware')) acc.push('Hardware');
+                                      if (r.includes('Outreach')) acc.push('Outreach');
+                                      return acc;
+                                    }, [])
+                                  ))
+                                : [];
+                              return subteams.length > 0 ? (
+                                <p className="mt-1 text-sm font-medium text-amber-500/80">
+                                  {subteams.join(" • ")}
+                                </p>
+                              ) : null;
+                            })()}
+
+                            {alum.college ? (
+                              <p className="mt-2 text-sm text-amber-200/70">
+                                {alum.college}
+                              </p>
+                            ) : alum.school ? (
+                              <p className="mt-2 text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                                {alum.school}
+                              </p>
+                            ) : null}
+
+                            <p className="mt-3 text-xs text-gray-500">
+                              {alum.yearsOnTeam} year{(alum.yearsOnTeam ?? 0) !== 1 ? "s" : ""} on team
+                            </p>
+                          </div>
+                        </article>
+                      </FloatIn>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
-          </div>
         </div>
       ) : null}
     </section>
