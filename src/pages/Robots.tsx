@@ -50,7 +50,7 @@ export default function Robots() {
             <article className="group relative rounded-3xl border border-white/10 bg-gradient-to-br from-black via-zinc-900 to-neutral-900 overflow-hidden shadow-2xl shadow-black/40">
               {/* super slow fade-in accent glow */}
               <div 
-                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[3000ms]" 
+                className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[700ms]" 
                 style={{ backgroundImage: `radial-gradient(circle at top right, ${robot.accent ? robot.accent + '25' : 'rgba(255,255,255,0.1)'}, transparent 60%)` }}
               />
               {(() => {

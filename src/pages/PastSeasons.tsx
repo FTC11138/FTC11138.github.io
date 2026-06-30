@@ -50,7 +50,7 @@ export default function PastSeasons() {
 
               <div className="group relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-950 via-zinc-900/90 to-neutral-900/90 p-7 md:p-8 shadow-2xl shadow-black/40">
                 {/* subtle glow */}
-                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[3000ms] bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.24),transparent_55%)]" />
+                <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-[700ms] bg-[radial-gradient(circle_at_top_left,rgba(248,113,113,0.24),transparent_55%)]" />
 
                 {/* season header */}
                 <div className="relative flex flex-col gap-4 md:flex-row md:items-center md:justify-between">

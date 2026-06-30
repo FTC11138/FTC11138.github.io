@@ -32,28 +32,4 @@ export const statsData: StatItem[] = [
     suffix: "+",
     description: "Total community workshops & demos",
   },
-  {
-    title: "Hours This Season",
-    maxNumber: 400,
-    suffix: "+",
-    description: "Dedicated to robotics and outreach",
-  },
-  {
-    title: "People Reached This Season",
-    maxNumber: 2600,
-    suffix: "+",
-    description: "Through our community programs",
-  },
-  {
-    title: "Events Hosted & Attended",
-    maxNumber: 30,
-    suffix: "+",
-    description: "Engaging with the STEM community",
-  },
-  {
-    title: "Social Media Views",
-    maxNumber: 24,
-    suffix: "k",
-    description: "Sharing our journey online",
-  },
 ];

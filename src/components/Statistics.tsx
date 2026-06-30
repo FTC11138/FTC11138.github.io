@@ -96,7 +96,7 @@ export const Statistics = () => {
   return (
     <div
       ref={containerRef}
-      className="m-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto"
+      className="m-16 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto"
     >
       {statsData.map((stat, index) => {
         const isActive = index === activeIndex;
