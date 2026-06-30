@@ -43,12 +43,14 @@ export default function Home() {
           {/* LEFT SIDE — BRANDING */}
           <div className="space-y-6">
             <FloatIn delay={0}>
-              <Tag className="inline-flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-red-300" />
-                <span className="text-xs tracking-wider uppercase text-red-200/90">
-                  Bellevue, Washington
-                </span>
-              </Tag>
+              <a href="https://www.google.com/maps/place/1805+136th+Pl+NE,+Bellevue,+WA" target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-80 transition cursor-pointer">
+                <Tag className="inline-flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-red-300" />
+                  <span className="text-xs tracking-wider uppercase text-red-200/90">
+                    Bellevue, Washington
+                  </span>
+                </Tag>
+              </a>
             </FloatIn>
 
             <FloatIn delay={100}>

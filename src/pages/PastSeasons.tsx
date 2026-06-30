@@ -80,11 +80,7 @@ export default function PastSeasons() {
                   {season.highlights.map((highlight) => (
                     <div
                       key={`${season.season}-${highlight.event}`}
-                      className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 ${
-                        highlight.notes.length > 0
-                          ? "border-red-500/40 bg-red-950/20 shadow-red-500/10"
-                          : "border-white/5 bg-black/20 opacity-60 hover:opacity-100 shadow-black/20"
-                      }`}
+                      className="rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-red-500/40 bg-red-950/20 shadow-red-500/10"
                     >
                       <h3 className="text-base md:text-lg font-semibold text-white">
                         {highlight.event}
@@ -96,8 +92,8 @@ export default function PastSeasons() {
                         <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
                           {highlight.notes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
-                              <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
-                              <span>{note}</span>
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
+                              <span className="-translate-y-[3px] leading-snug">{note}</span>
                             </li>
                           ))}
                         </ul>

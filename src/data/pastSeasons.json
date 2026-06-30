@@ -5,18 +5,6 @@
     "current": true,
     "highlights": [
       {
-        "event": "Rookie Rumble",
-        "notes": []
-      },
-      {
-        "event": "Maxwell League Meet 1",
-        "notes": []
-      },
-      {
-        "event": "Maxwell League Meet 2",
-        "notes": []
-      },
-      {
         "event": "Hawking League Tournament",
         "notes": ["Connect Award"]
       },
@@ -44,14 +32,6 @@
     "game": "INTO THE DEEP",
     "highlights": [
       {
-        "event": "Bardeen League Meet 1",
-        "notes": []
-      },
-      {
-        "event": "Bardeen League Meet 2",
-        "notes": []
-      },
-      {
         "event": "Tesla Interleague",
         "notes": ["Connect Award", "Finalist Alliance - Captain"]
       },
@@ -78,14 +58,6 @@
     "game": "CENTERSTAGE",
     "highlights": [
       {
-        "event": "WA Turing League Meet 1",
-        "notes": []
-      },
-      {
-        "event": "WA Turing League Meet 2",
-        "notes": []
-      },
-      {
         "event": "WA Pasteur Interleague Tournament",
         "notes": [
           "Connect Award",
@@ -104,14 +76,6 @@
     "season": "2022-2023",
     "game": "POWERPLAY",
     "highlights": [
-      {
-        "event": "WA Turing League Meet 1",
-        "notes": []
-      },
-      {
-        "event": "WA Turing League Meet 2",
-        "notes": []
-      },
       {
         "event": "WA Pasteur Interleague Tournament",
         "notes": [
@@ -134,14 +98,6 @@
     "season": "2021-2022",
     "game": "FREIGHT FRENZY",
     "highlights": [
-      {
-        "event": "WA Bardeen League Meet #1",
-        "notes": []
-      },
-      {
-        "event": "WA Bardeen League Meet #2",
-        "notes": []
-      },
       {
         "event": "WA Pasteur Interleague Tournament",
         "notes": [
@@ -166,31 +122,7 @@
     "game": "ULTIMATE GOAL",
     "highlights": [
       {
-        "event": "WA FTC Scrimmage #1 REMOTE",
-        "notes": []
-      },
-      {
-        "event": "WA FTC Scrimmage #2 REMOTE",
-        "notes": []
-      },
-      {
-        "event": "WA FTC Scrimmage #3 REMOTE",
-        "notes": []
-      },
-      {
-        "event": "WA FTC Hopper League Meet #1 REMOTE",
-        "notes": []
-      },
-      {
         "event": "FIRST Innovation Challenge Event presented by Qualcomm",
-        "notes": []
-      },
-      {
-        "event": "WA FTC Hopper League Meet #2 REMOTE",
-        "notes": []
-      },
-      {
-        "event": "WA FTC Practice Scrimmage REMOTE",
         "notes": []
       },
       {
@@ -207,14 +139,6 @@
     "season": "2019-2020",
     "game": "SKYSTONE",
     "highlights": [
-      {
-        "event": "Turing 1st League Event",
-        "notes": []
-      },
-      {
-        "event": "Turing 2nd League Event",
-        "notes": []
-      },
       {
         "event": "FTC Feynman Interleague",
         "notes": [
