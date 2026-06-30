@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import members from "../data/members.json";
 import FloatIn from "../components/FloatIn";
 
@@ -15,6 +16,52 @@ type Member = {
   yearsOnTeam?: number;
   links?: { image?: string };
 };
+
+function JiannaScare({ src, alt, className }: { src: string; alt: string; className: string }) {
+  const imageMap = import.meta.glob("../assets/people/*", {
+    eager: true,
+    as: "url",
+  }) as Record<string, string>;
+  const resolveImg = (file: string) => {
+    const entry = Object.entries(imageMap).find(([p]) => p.endsWith(`/${file}`));
+    return entry ? entry[1] : undefined;
+  };
+
+  const [scared, setScared] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const scareImg = resolveImg("jianna2.jpg");
+
+  const handleEnter = () => {
+    timerRef.current = setTimeout(() => {
+      setScared(true);
+      setTimeout(() => setScared(false), 150);
+    }, 1000);
+  };
+
+  const handleLeave = () => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    setScared(false);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, []);
+
+  return (
+    <img
+      src={scared && scareImg ? scareImg : src}
+      alt={alt}
+      className={`${className} ${scared ? "scale-110 brightness-125" : ""} transition-transform duration-75`}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      onError={(e) => {
+        (e.currentTarget as HTMLImageElement).style.display = "none";
+      }}
+    />
+  );
+}
 
 export default function Team() {
   const { students = [], coaches = [], alumni = [] } = members as {
@@ -45,18 +92,26 @@ export default function Team() {
       >
         <div className="p-8 flex-1 flex flex-col items-center text-center">
           {person.links?.image ? (
-            <img
-              src={resolveImage(person.links.image)}
-              alt={person.name}
-              className={`h-48 w-48 rounded-full object-cover ring-2 ring-red-500/40 ${
-                person.id === "chinmayi-buddhavarapu"
-                  ? "object-[center_60%]"
-                  : ""
-              }`}
-              onError={(e) => {
-                (e.currentTarget as HTMLImageElement).style.display = "none";
-              }}
-            />
+            person.id === "jianna-liu" ? (
+              <JiannaScare
+                src={resolveImage(person.links.image) ?? ""}
+                alt={person.name}
+                className="h-48 w-48 rounded-full object-cover ring-2 ring-red-500/40"
+              />
+            ) : (
+              <img
+                src={resolveImage(person.links.image)}
+                alt={person.name}
+                className={`h-48 w-48 rounded-full object-cover ring-2 ring-red-500/40 ${
+                  person.id === "chinmayi-buddhavarapu"
+                    ? "object-[center_60%]"
+                    : ""
+                }`}
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).style.display = "none";
+                }}
+              />
+            )
           ) : (
             <div className="h-48 w-48 rounded-full bg-white/10" />
           )}
@@ -152,54 +207,64 @@ export default function Team() {
         </div>
       ) : null}
 
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-8">
-        {students.map((t, i) => renderMemberCard(t, 500 + i * 100))}
+      <div className="flex flex-wrap justify-center gap-8 mt-8">
+        {students.map((t, i) => (
+          <div key={t.id} className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.34rem)]">
+            {renderMemberCard(t, 500 + i * 100)}
+          </div>
+        ))}
       </div>
 
       {alumni.length ? (
         <div className="mt-20">
           <FloatIn delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-center mb-2">
               Alumni
             </h2>
+            <p className="text-center text-gray-500 text-sm mb-10">Class of 2026</p>
           </FloatIn>
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-8">
             {alumni.map((alum, index) => (
-              <FloatIn key={alum.id} delay={100 + index * 100} className="h-full">
-                <article
-                  data-reveal
-                  className="h-full flex flex-col rounded-3xl border border-amber-500/20 bg-black/70"
-                >
-                  <div className="p-8 flex-1 flex flex-col items-center text-center">
-                    {alum.links?.image ? (
-                      <img
-                        src={resolveImage(alum.links.image)}
-                        alt={alum.name}
-                        className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 grayscale-[30%]"
-                        onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).style.display = "none";
-                        }}
-                      />
-                    ) : (
-                      <div className="h-48 w-48 rounded-full bg-white/10" />
-                    )}
+              <div key={alum.id} className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.34rem)]">
+                <FloatIn delay={100 + index * 150} className="h-full">
+                  <article
+                    data-reveal
+                    className="group h-full flex flex-col rounded-3xl border border-amber-500/20 bg-gradient-to-b from-amber-950/20 to-black/70 hover:border-amber-500/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
+                  >
+                    <div className="p-8 flex-1 flex flex-col items-center text-center">
+                      {alum.links?.image ? (
+                        <div className="relative">
+                          <img
+                            src={resolveImage(alum.links.image)}
+                            alt={alum.name}
+                            className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 group-hover:ring-amber-400/60 transition-all duration-500 grayscale-[20%] group-hover:grayscale-0"
+                            onError={(e) => {
+                              (e.currentTarget as HTMLImageElement).style.display = "none";
+                            }}
+                          />
+                          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                        </div>
+                      ) : (
+                        <div className="h-48 w-48 rounded-full bg-white/10" />
+                      )}
 
-                    <h3 className="mt-4 text-xl font-semibold text-white">
-                      {alum.name}
-                    </h3>
-                    <p className="mt-1 text-sm text-gray-400">
-                      Class of {alum.graduationYear}
-                    </p>
-                    <p className="text-sm text-gray-400">
-                      {alum.college}
-                    </p>
+                      <h3 className="mt-4 text-xl font-semibold text-white group-hover:text-amber-100 transition-colors duration-300">
+                        {alum.name}
+                      </h3>
+                      <p className="mt-1 text-sm text-amber-300/70">
+                        Class of {alum.graduationYear}
+                      </p>
+                      <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+                        {alum.college}
+                      </p>
 
-                    <p className="mt-3 text-xs text-gray-500">
-                      {alum.yearsOnTeam} year{(alum.yearsOnTeam ?? 0) !== 1 ? "s" : ""} on team
-                    </p>
-                  </div>
-                </article>
-              </FloatIn>
+                      <p className="mt-3 text-xs text-gray-500">
+                        {alum.yearsOnTeam} year{(alum.yearsOnTeam ?? 0) !== 1 ? "s" : ""} on team
+                      </p>
+                    </div>
+                  </article>
+                </FloatIn>
+              </div>
             ))}
           </div>
         </div>

@@ -1,19 +1,6 @@
 {
   "students": [
     {
-      "id": "jianna-liu",
-      "name": "Jianna Liu",
-      "role": [
-        "Outreach Lead"
-      ],
-      "school": "Newport High School",
-      "grade": "Grade 11",
-      "yearsOnTeam": 4,
-      "links": {
-        "image": "jianna.avif"
-      }
-    },
-    {
       "id": "aarush-kikkuru",
       "name": "Aarush Kikkuru",
       "role": [
@@ -37,6 +24,19 @@
       "yearsOnTeam": 4,
       "links": {
         "image": "michael.jpg"
+      }
+    },
+    {
+      "id": "jianna-liu",
+      "name": "Jianna Liu",
+      "role": [
+        "Outreach Lead"
+      ],
+      "school": "Newport High School",
+      "grade": "Grade 11",
+      "yearsOnTeam": 4,
+      "links": {
+        "image": "jianna.avif"
       }
     },
     {
@@ -79,15 +79,17 @@
       }
     },
     {
-      "id": "hedong",
-      "name": "Hedong",
+      "id": "hedong-cheng",
+      "name": "Hedong Cheng",
       "role": [
         "Hardware"
       ],
       "school": "Tyee Middle School",
       "grade": "Grade 8",
       "yearsOnTeam": 1,
-      "links": {}
+      "links": {
+        "image": "hedong.jpg"
+      }
     },
     {
       "id": "jack-liu",
@@ -144,6 +146,17 @@
   ],
   "coaches": [
     {
+      "id": "surendra-ulabala",
+      "name": "Surendra Ulabala",
+      "role": [
+        "Software"
+      ],
+      "description": "Mentors the programming crew on clean architecture, autonomous debugging, and code reviews.",
+      "links": {
+        "image": "surendra-ulabala.jpg"
+      }
+    },
+    {
       "id": "weigang-hu",
       "name": "Weigang Hu",
       "role": [
@@ -163,48 +176,9 @@
       "links": {
         "image": "kyle-liu.jpg"
       }
-    },
-    {
-      "id": "surendra-ulabala",
-      "name": "Surendra Ulabala",
-      "role": [
-        "Software"
-      ],
-      "description": "Mentors the programming crew on clean architecture, autonomous debugging, and code reviews.",
-      "links": {
-        "image": "surendra-ulabala.jpg"
-      }
     }
   ],
   "alumni": [
-    {
-      "id": "ryan-chhabra",
-      "name": "Ryan Chhabra",
-      "role": [
-        "Software Lead"
-      ],
-      "school": "Tesla STEM High School",
-      "yearsOnTeam": 5,
-      "graduationYear": 2026,
-      "college": "University of Washington",
-      "links": {
-        "image": "ryan.jpg"
-      }
-    },
-    {
-      "id": "daren-lang",
-      "name": "Daren Lang",
-      "role": [
-        "Hardware Lead"
-      ],
-      "school": "Eastside Preparatory School",
-      "yearsOnTeam": 5,
-      "graduationYear": 2026,
-      "college": "Tufts University",
-      "links": {
-        "image": "daren.avif"
-      }
-    },
     {
       "id": "anish-agrawal",
       "name": "Anish Agrawal",
@@ -218,6 +192,34 @@
       "college": "University of Washington",
       "links": {
         "image": "anish.jpeg"
+      }
+    },
+    {
+      "id": "ryan-chhabra",
+      "name": "Ryan Chhabra",
+      "role": [
+        "Software Lead"
+      ],
+      "school": "Tesla STEM High School",
+      "yearsOnTeam": 4,
+      "graduationYear": 2026,
+      "college": "University of Washington",
+      "links": {
+        "image": "ryan.jpg"
+      }
+    },
+    {
+      "id": "daren-lang",
+      "name": "Daren Lang",
+      "role": [
+        "Hardware Lead"
+      ],
+      "school": "Eastside Preparatory School",
+      "yearsOnTeam": 4,
+      "graduationYear": 2026,
+      "college": "Tufts University",
+      "links": {
+        "image": "daren.avif"
       }
     }
   ]
