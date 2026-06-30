@@ -4,6 +4,7 @@ import FloatIn from "../components/FloatIn";
 type Highlight = {
   event: string;
   notes: string[];
+  upcoming?: boolean;
 };
 
 type Season = {
@@ -79,16 +80,23 @@ export default function PastSeasons() {
                   {season.highlights.map((highlight) => (
                     <div
                       key={`${season.season}-${highlight.event}`}
-                      className="rounded-2xl border border-white/10 bg-black/40 p-5 shadow-lg shadow-black/30 transition-transform duration-200 hover:-translate-y-1"
+                      className={`rounded-2xl border p-5 shadow-lg shadow-black/30 transition-transform duration-200 hover:-translate-y-1 ${
+                        highlight.notes.length > 0
+                          ? "border-red-500/20 bg-black/60"
+                          : "border-white/10 bg-black/40"
+                      }`}
                     >
                       <h3 className="text-base md:text-lg font-semibold text-white">
                         {highlight.event}
                       </h3>
+                      {highlight.upcoming && (
+                        <p className="mt-2 text-sm italic text-amber-300/80">Upcoming Event</p>
+                      )}
                       {highlight.notes.length > 0 && (
                         <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
                           {highlight.notes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
-                              <span className="mt-1 h-1.5 w-1.5 rounded-full bg-red-400" />
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
                               <span>{note}</span>
                             </li>
                           ))}
