@@ -77,29 +77,34 @@ export default function PastSeasons() {
 
                 {/* highlights */}
                 <div className="relative mt-6 grid gap-5 md:grid-cols-2">
-                  {season.highlights.map((highlight) => (
-                    <div
-                      key={`${season.season}-${highlight.event}`}
-                      className="rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-red-500/40 bg-red-950/20 shadow-red-500/10"
-                    >
-                      <h3 className="text-base md:text-lg font-semibold text-white">
-                        {highlight.event}
-                      </h3>
-                      {highlight.upcoming && (
-                        <p className="mt-2 text-sm italic text-amber-300/80">Upcoming Event</p>
-                      )}
-                      {highlight.notes.length > 0 && (
+                  {season.highlights.map((highlight, index) => {
+                    const isLastOdd = index === season.highlights.length - 1 && season.highlights.length % 2 !== 0;
+                    const displayNotes = highlight.notes.length > 0 ? highlight.notes : ["Competed"];
+
+                    return (
+                      <div
+                        key={`${season.season}-${highlight.event}`}
+                        className={`rounded-2xl border p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 border-red-500/30 bg-black/40 hover:bg-red-950/10 shadow-red-500/5 ${
+                          isLastOdd ? "md:col-span-2 md:max-w-md md:mx-auto w-full" : ""
+                        }`}
+                      >
+                        <h3 className="text-base md:text-lg font-semibold text-white">
+                          {highlight.event}
+                        </h3>
+                        {highlight.upcoming && (
+                          <p className="mt-2 text-sm italic text-amber-300/80">Upcoming Event</p>
+                        )}
                         <ul className="mt-3 space-y-1.5 text-gray-300 text-sm">
-                          {highlight.notes.map((note) => (
+                          {displayNotes.map((note) => (
                             <li key={note} className="flex items-start gap-2">
                               <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-red-400" />
-                              <span className="-translate-y-[3px] leading-snug">{note}</span>
+                              <span className="leading-snug">{note}</span>
                             </li>
                           ))}
                         </ul>
-                      )}
-                    </div>
-                  ))}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </article>
