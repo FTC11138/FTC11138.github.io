@@ -142,6 +142,32 @@
       "links": {
         "image": "charlie.jpg"
       }
+    },
+    {
+      "id": "jianna-liu",
+      "name": "Jianna Liu",
+      "role": [
+        "Outreach Lead"
+      ],
+      "school": "Newport High School",
+      "grade": "Grade 11",
+      "yearsOnTeam": 4,
+      "links": {
+        "image": "jianna.avif"
+      }
+    },
+    {
+      "id": "michael-hu",
+      "name": "Michael Hu",
+      "role": [
+        "Hardware Lead"
+      ],
+      "school": "Eastlake High School",
+      "grade": "Grade 10",
+      "yearsOnTeam": 4,
+      "links": {
+        "image": "michael.avif"
+      }
     }
   ],
   "coaches": [
@@ -163,7 +189,7 @@
         "Hardware",
         "Head Coach"
       ],
-      "description": "Leads team operations and guides manufacturing reviews, and helps students iterate clean mechanisms.",
+      "description": "Leads team operations, guides manufacturing reviews, and helps students iterate clean mechanisms.",
       "links": {}
     },
     {
@@ -182,45 +208,118 @@
     {
       "id": "anish-agrawal",
       "name": "Anish Agrawal",
-      "role": [
-        "Hardware",
-        "Software"
-      ],
+      "role": ["Hardware", "Software"],
       "school": "UW Robinson",
       "yearsOnTeam": 3,
       "graduationYear": 2026,
       "college": "University of Washington",
-      "links": {
-        "image": "anish.jpeg"
-      }
+      "links": { "image": "anish.jpeg" }
     },
     {
       "id": "ryan-chhabra",
       "name": "Ryan Chhabra",
-      "role": [
-        "Software Lead"
-      ],
+      "role": ["Software Lead"],
       "school": "Tesla STEM High School",
       "yearsOnTeam": 4,
       "graduationYear": 2026,
       "college": "University of Washington",
-      "links": {
-        "image": "ryan.jpg"
-      }
+      "links": { "image": "ryan.jpg" }
     },
     {
       "id": "daren-lang",
       "name": "Daren Lang",
-      "role": [
-        "Hardware Lead"
-      ],
+      "role": ["Hardware Lead"],
       "school": "Eastside Preparatory School",
       "yearsOnTeam": 4,
       "graduationYear": 2026,
       "college": "Tufts University",
-      "links": {
-        "image": "daren.avif"
-      }
+      "links": { "image": "daren.avif" }
+    },
+    {
+      "id": "shimon-keselman",
+      "name": "Shimon Keselman",
+      "role": ["Hardware Lead"],
+      "yearsOnTeam": 3,
+      "graduationYear": 2025,
+      "college": "Carnegie Mellon University",
+      "links": { "image": "shimon.png" }
+    },
+    {
+      "id": "seth-nissanka",
+      "name": "Seth Nissanka",
+      "role": ["Hardware"],
+      "yearsOnTeam": 5,
+      "graduationYear": 2025,
+      "college": "Santa Clara University",
+      "links": {}
+    },
+    {
+      "id": "sophia-xu",
+      "name": "Sophia Xu",
+      "role": ["Hardware", "Software"],
+      "school": "Lakeside School",
+      "yearsOnTeam": 2,
+      "graduationYear": 2025,
+      "links": { "image": "sophia.avif" }
+    },
+    {
+      "id": "gavin-zhou",
+      "name": "Gavin Zhou",
+      "role": ["Software"],
+      "yearsOnTeam": 2,
+      "graduationYear": 2024,
+      "links": { "image": "gavin.jpg" }
+    },
+    {
+      "id": "abigail-li",
+      "name": "Abigail Li",
+      "role": ["Outreach"],
+      "yearsOnTeam": 2,
+      "graduationYear": 2024,
+      "links": { "image": "abigail.jpg" }
+    },
+    {
+      "id": "sophia-shen",
+      "name": "Sophia Shen",
+      "role": ["Software"],
+      "school": "Interlake High School",
+      "yearsOnTeam": 2,
+      "graduationYear": 2024,
+      "links": { "image": "sophia-shen.png" }
+    },
+    {
+      "id": "robert-zhou",
+      "name": "Robert Zhou",
+      "role": ["Hardware"],
+      "yearsOnTeam": 3,
+      "graduationYear": 2024,
+      "links": { "image": "robert.png" }
+    },
+    {
+      "id": "brandon-liu",
+      "name": "Brandon Liu",
+      "role": ["Hardware"],
+      "yearsOnTeam": 3,
+      "graduationYear": 2024,
+      "links": {}
+    },
+    {
+      "id": "eric-zhou",
+      "name": "Eric Zhou",
+      "role": ["Co-Captain", "Software Lead"],
+      "yearsOnTeam": 6,
+      "graduationYear": 2023,
+      "college": "Cornell University",
+      "links": {}
+    },
+    {
+      "id": "nathan-zhang",
+      "name": "Nathan Zhang",
+      "role": ["Co-Captain", "Outreach Lead", "Hardware"],
+      "yearsOnTeam": 7,
+      "graduationYear": 2023,
+      "college": "UPenn",
+      "links": {}
     }
   ]
 }
