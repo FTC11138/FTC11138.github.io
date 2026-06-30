@@ -236,7 +236,7 @@ export default function Team() {
                           <img
                             src={resolveImage(alum.links.image)}
                             alt={alum.name}
-                            className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 group-hover:ring-amber-400/60 transition-all duration-500 grayscale group-hover:grayscale-0"
+                            className="h-48 w-48 rounded-full object-cover ring-2 ring-amber-500/40 group-hover:ring-amber-400/60 transition-all duration-500 grayscale-[20%] group-hover:grayscale-0"
                             onError={(e) => {
                               (e.currentTarget as HTMLImageElement).style.display = "none";
                             }}
