@@ -23,7 +23,7 @@
       "grade": "Grade 10",
       "yearsOnTeam": 4,
       "links": {
-        "image": "michael.jpg"
+        "image": "michael.avif"
       }
     },
     {
@@ -141,32 +141,6 @@
       "yearsOnTeam": 1,
       "links": {
         "image": "charlie.jpg"
-      }
-    },
-    {
-      "id": "jianna-liu",
-      "name": "Jianna Liu",
-      "role": [
-        "Outreach Lead"
-      ],
-      "school": "Newport High School",
-      "grade": "Grade 11",
-      "yearsOnTeam": 4,
-      "links": {
-        "image": "jianna.avif"
-      }
-    },
-    {
-      "id": "michael-hu",
-      "name": "Michael Hu",
-      "role": [
-        "Hardware Lead"
-      ],
-      "school": "Eastlake High School",
-      "grade": "Grade 10",
-      "yearsOnTeam": 4,
-      "links": {
-        "image": "michael.avif"
       }
     }
   ],
@@ -318,7 +292,7 @@
       "role": ["Co-Captain", "Outreach Lead", "Hardware"],
       "yearsOnTeam": 7,
       "graduationYear": 2023,
-      "college": "UPenn",
+      "college": "University of Pennsylvania",
       "links": {}
     }
   ]
