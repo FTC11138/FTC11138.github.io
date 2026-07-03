@@ -102,11 +102,7 @@ export default function Team() {
               <img
                 src={resolveImage(person.links.image)}
                 alt={person.name}
-                className={`h-48 w-48 rounded-full object-cover ring-2 ring-red-500/40 ${
-                  person.id === "chinmayi-buddhavarapu"
-                    ? "object-[center_60%]"
-                    : ""
-                }`}
+                className="h-48 w-48 rounded-full object-cover ring-2 ring-red-500/40"
                 onError={(e) => {
                   (e.currentTarget as HTMLImageElement).style.display = "none";
                 }}
@@ -175,9 +171,10 @@ export default function Team() {
 
       {coaches.length ? (
         <div className="mt-16">
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          <div className="flex flex-wrap justify-center gap-8">
             {coaches.map((coach, index) => (
-              <FloatIn key={coach.id} delay={200 + index * 100}>
+              <div key={coach.id} className="w-full md:w-[calc(50%-1rem)] xl:w-[calc(33.333%-1.34rem)]">
+              <FloatIn delay={200 + index * 100}>
                 <article
                   data-reveal
                   className="rounded-3xl border border-red-500/50 bg-gradient-to-b from-red-950/20 to-black/70 p-6 shadow-[0_0_20px_rgba(248,113,113,0.15)] relative overflow-hidden"
@@ -202,6 +199,7 @@ export default function Team() {
                   </div>
                 </article>
               </FloatIn>
+              </div>
             ))}
           </div>
         </div>

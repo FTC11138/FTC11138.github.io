@@ -44,7 +44,8 @@ const Counter = ({
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       startTimeRef.current = null;
     };
-  }, [end, decimals, onComplete]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [end, decimals]);
 
   return (
     <span className="text-4xl font-bold text-red-400">

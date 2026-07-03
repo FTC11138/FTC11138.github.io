@@ -170,7 +170,7 @@ const teamConnectionGroups = [
 
 const globalSupport = {
   description:
-    "We donated nearly $1,000 of parts to teams starting programs in Ghana, coordinating with FTC 5773 Ink and Metal and 21227 Legend from Fremont, CA to deliver the kits.",
+    "We donated over $1,000 of parts to teams starting programs in Ghana, coordinating with FTC 5773 Ink and Metal and 21227 Legend from Fremont, CA to deliver the kits.",
   stats: [
     { value: "20", label: "U-Channels" },
     { value: "2", label: "Linear Slides" },
@@ -477,8 +477,8 @@ export default function Outreach() {
         <article className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/40 text-center">
           <h2 className="text-3xl font-bold">Volunteering & Sponsors</h2>
           <p className="mt-4 text-sm text-gray-300 max-w-3xl mx-auto">
-            Beyond robotics outreach, our members volunteered 372.5 service
-            hours this year—about 41 hours per person—supporting STEM fairs,
+            Beyond robotics outreach, our members volunteered over 400 service
+            hours this year—about 36 hours per person—supporting STEM fairs,
             farmer&apos;s markets, and mentoring rookie teams. None of this
             would be possible without our sponsors.
           </p>

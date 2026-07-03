@@ -23,7 +23,7 @@
     "id": "celest-2",
     "name": "CELEST 2.0",
     "season": "2023-2024 · CENTERSTAGE",
-    "description": "Dual-stage carbon fiber slides, drone launcher, and camera-driven targeting built for rapid scoring.",
+    "description": "Dual-stage slides with drone launcher and AprilTag-guided pixel placement tuned for CENTERSTAGE.",
     "specs": [
       "Road Runner + AprilTag localization",
       "8-second pixel cycle time",

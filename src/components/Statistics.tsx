@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { statsData } from "../data/statsData";
 
-const DURATION = 1300; // 1 second per counter
+const DURATION = 1300; // 1.3 seconds per counter
 
 // Single counter that calls onComplete when finished
 const Counter = ({
@@ -57,7 +57,8 @@ const Counter = ({
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
       startTimeRef.current = null;
     };
-  }, [start, end, duration, onComplete]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [start, end, duration]);
 
   return (
     <span className="text-4xl font-bold text-red-400">
