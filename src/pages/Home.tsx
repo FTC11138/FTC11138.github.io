@@ -92,9 +92,7 @@ export default function Home() {
 
           {/* RIGHT SIDE — STATISTICS CARD */}
           <FloatIn delay={200}>
-            {/* <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-2xl shadow-black/50 p-8"> */}
             <Statistics />
-            {/* </div> */}
           </FloatIn>
         </div>
 
